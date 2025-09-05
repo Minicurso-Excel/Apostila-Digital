@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Básico: Dominando o Essencial para o Dia a Dia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app-wrapper">
+        <button id="botao-menu" class="botao-menu">☰</button>
+        <aside id="barra-lateral">
+
+            <nav class="navegacao-barra-lateral">
+                <a href="#home" class="link-nav ativo"><span class="icone">🏠</span> Início</a>
+                <h3 class="titulo-nav">Fundamentos</h3>
+                <a href="#introducao" class="link-nav"><span class="icone">🧭</span> Interface e Navegação</a>
+                <a href="#formatacao" class="link-nav"><span class="icone">🎨</span> Formatação de Células</a>
+                <h3 class="titulo-nav">Missões Práticas</h3>
+                <a href="#missao-formulas" class="link-nav"><span class="icone">🎯</span> Missão 1: Fórmulas Básicas</a>
+                <a href="#missao-se" class="link-nav"><span class="icone">🎯</span> Missão 2: Função Lógica SE</a>
+                <a href="#missao-procv" class="link-nav"><span class="icone">🎯</span> Missão 3: Função PROCV</a>
+                <h3 class="titulo-nav">Análise de Dados</h3>
+                <a href="#filtros" class="link-nav"><span class="icone">📊</span> Filtros e Ordenação</a>
+                <a href="#graficos" class="link-nav"><span class="icone">📈</span> Criação de Gráficos</a>
+                <h3 class="titulo-nav">Recursos Adicionais</h3>
+                <a href="#atalhos" class="link-nav"><span class="icone">⌨️</span> Atalhos Essenciais</a>
+            </nav>
+        </aside>
+
+        <main id="conteudo-principal">
+            <section id="home" class="secao-conteudo ativo">
+                <header class="cabecalho-secao">
+                    <h1>Bem-vindo ao minicurso Excel Básico: Dominando o Essencial para o Dia a Dia!</h1>
+                </header>
+                <div class="corpo-secao">
+                    <p>Olá! Este é o seu material de apoio para o minicurso Excel. Para acompanhar adequadamente este
+                        minicurso, é essencial que você <strong>baixe o arquivo de apoio</strong>.</p>
+
+                    <div class="download-box"
+                        style="background-color: #f0f7ff; border: 2px solid #3498db; border-radius: 8px; padding: 15px; margin: 20px 0; text-align: center;">
+                        <h3 style="color: #2c3e50; margin-top: 0;">📥 Arquivo de Apoio</h3>
+                        <p>Para realizar os exercícios e seguir as demonstrações, faça o download do arquivo:</p>
+                        <a href="MinicursoExcel.xlsx" download
+                            style="display: inline-block; background-color: #3498db; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px;">Baixar
+                            MinicursoExcel.xlsx</a>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #7f8c8d;">Após baixar, abra o arquivo no
+                            Microsoft Excel ou aplicativo compatível.</p>
+                    </div>
+
+                    <p>Navegue pelas lições na barra lateral para começar o minicurso, desde os primeiros passos até a
+                        criação de análises inteligentes.</p>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h4>Aprenda no seu ritmo</h4>
+                            <p>As lições são curtas, diretas e focadas no que realmente importa.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Pratique com Missões</h4>
+                            <p>Teste seu conhecimento com exercícios interativos que simulam cenários reais.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Torne-se Produtivo</h4>
+                            <p>Descubra ferramentas e atalhos que vão acelerar seu trabalho e estudos.</p>
+                        </div>
+                    </div>
+                    <p class="mt-4">Pronto para começar? Clique em "Interface e Navegação" na barra lateral!</p>
+                </div>
+            </section>
+
+            <section id="introducao" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Interface e Navegação</h1>
+                    <p>Conhecendo o ambiente de trabalho do Excel.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>Ao abrir o Excel, você verá uma grade. Vamos conhecer os elementos principais:</p>
+                    <ul>
+                        <li><strong>Células:</strong> Os retângulos onde inserimos os dados. Cada célula tem um endereço
+                            (ex: A1, B2).</li>
+                        <li><strong>Linhas e Colunas:</strong> Linhas são numeradas (1, 2, 3...) e colunas são nomeadas
+                            com letras (A, B, C...).</li>
+                        <li><strong>Planilhas:</strong> Um arquivo do Excel pode ter várias planilhas. Você pode
+                            alternar entre elas nas abas inferiores.</li>
+                        <li><strong>Faixa de Opções:</strong> A barra superior com todas as ferramentas e comandos
+                            (Página Inicial, Inserir, Fórmulas, etc.).</li>
+                        <li><strong>Barra de Fórmulas:</strong> Mostra o conteúdo da célula selecionada. É aqui que você
+                            edita fórmulas.</li>
+                    </ul>
+                    <div class="caixa-exercicio">
+                        <h3>Exercício Prático</h3>
+                        <p>1. Abra o Excel.<br>2. Clique na célula C5.<br>3. Digite seu nome e pressione Enter.<br>4.
+                            Observe o endereço "C5" na caixa de nome e seu nome na Barra de Fórmulas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formatacao" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Formatação de Células</h1>
+                    <p>Deixando sua planilha com uma aparência profissional.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>Formatar sua planilha ajuda a organizar e visualizar melhor os dados.</p>
+                    <p><strong>Como formatar:</strong></p>
+                    <ul>
+                        <li><strong>Fonte:</strong> Na guia "Página Inicial", você pode alterar o tipo da fonte,
+                            tamanho, cor e aplicar <strong>negrito</strong>, <em>itálico</em> ou <u>sublinhado</u>.</li>
+                        <li><strong>Alinhamento:</strong> Centralize o texto, alinhe à esquerda ou à direita.</li>
+                        <li><strong>Cores de Preenchimento:</strong> Pinte o fundo das células para destacar
+                            informações.</li>
+                        <li><strong>Bordas:</strong> Adicione bordas às células para criar tabelas bem definidas.</li>
+                    </ul>
+                    <div class="caixa-exemplo">
+                        <h3>Exemplo: Lista de Compras</h3>
+                        <p>Crie uma tabela com as colunas: "Produto", "Quantidade", "Preço Unitário". Preencha com
+                            alguns itens. Agora, selecione o cabeçalho (Produto, Quantidade, etc.) e aplique negrito e
+                            uma cor de preenchimento.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="missao-formulas" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Missão 1: Fórmulas Básicas</h1>
+                    <p>Calcule o total, a média, o maior e o menor valor de um conjunto de dados.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>As fórmulas no Excel são essenciais para análise de dados e permitem automatizar cálculos
+                        complexos. Sempre começam com o sinal de igual (=).</p>
+
+                    <div class="caixa-info">
+                        <h3>Anatomia de uma Fórmula</h3>
+                        <ul>
+                            <li><strong>Sinal de igual (=):</strong> Indica ao Excel que você está inserindo uma fórmula
+                            </li>
+                            <li><strong>Funções:</strong> Comandos pré-definidos como SOMA, MÉDIA, etc.</li>
+                            <li><strong>Referências de células:</strong> Endereços das células que contêm os dados (ex:
+                                A1, B2:B10)</li>
+                            <li><strong>Operadores:</strong> Símbolos matemáticos (+, -, *, /, ^) e comparação (&gt;,
+                                &lt;, =)</li>
+                            <li><strong>Argumentos:</strong> Valores ou referências separados por ponto e vírgula dentro
+                                das funções</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="subtitulo-missao">Funções Estatísticas Essenciais</h2>
+
+                    <div class="caixa-funcao">
+                        <h3>SOMA</h3>
+                        <p><strong>O que faz:</strong> Soma todos os valores em um intervalo de células.</p>
+                        <p><strong>Sintaxe:</strong> <code class="trecho-codigo">=SOMA(número1; [número2]; ...)</code>
+                        </p>
+                        <p><strong>Exemplo prático:</strong> <code class="trecho-codigo">=SOMA(B2:B10)</code> soma todos
+                            os valores das células B2 até B10.</p>
+                        <p><strong>Dica avançada:</strong> Você pode somar intervalos não consecutivos usando vírgula:
+                            <code class="trecho-codigo">=SOMA(B2:B5; D2:D5)</code>
+                        </p>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h3>MÉDIA</h3>
+                        <p><strong>O que faz:</strong> Calcula a média aritmética de um conjunto de valores.</p>
+                        <p><strong>Sintaxe:</strong> <code class="trecho-codigo">=MÉDIA(número1; [número2]; ...)</code>
+                        </p>
+                        <p><strong>Exemplo prático:</strong> <code class="trecho-codigo">=MÉDIA(B2:B10)</code> calcula a
+                            média dos valores de B2 até B10.</p>
+                        <p><strong>Dica avançada:</strong> Para ignorar células vazias ou com texto, use <code
+                                class="trecho-codigo">MÉDIAA</code>.</p>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h3>MÁXIMO e MÍNIMO</h3>
+                        <p><strong>O que fazem:</strong> Encontram o maior e o menor valor em um intervalo,
+                            respectivamente.</p>
+                        <p><strong>Sintaxe:</strong> <code class="trecho-codigo">=MÁXIMO(número1; [número2]; ...)</code>
+                            e <code class="trecho-codigo">=MÍNIMO(número1; [número2]; ...)</code></p>
+                        <p><strong>Exemplo prático:</strong> <code class="trecho-codigo">=MÁXIMO(B2:B10)</code> retorna
+                            o
+                            maior valor no intervalo.</p>
+                        <p><strong>Caso de uso:</strong> Identificar vendedores com melhor/pior desempenho, encontrar
+                            valores extremos em conjuntos de dados.</p>
+                    </div>
+
+                    <h2 class="subtitulo-missao mt-4">Cenário: Relatório de Vendas Mensais</h2>
+                    <div class="container-tabela-excel">
+                        <table class="tabela-excel-estilo">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>A</th>
+                                    <th>B</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vendedor</td>
+                                    <td>Vendas (R$)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ana</td>
+                                    <td>3.500</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bruno</td>
+                                    <td>4.200</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Carla</td>
+                                    <td>2.800</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Daniel</td>
+                                    <td>5.100</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Elena</td>
+                                    <td>3.900</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 class="subtitulo-missao mt-4">Sua Missão:</h2>
+                    <p>Use as funções para preencher os cartões de resumo abaixo. O intervalo de vendas é
+                        <strong>B2:B6</strong>.
+                    </p>
+                    <div class="card-grid cartoes-missao">
+                        <div class="card">
+                            <h4>SOMA</h4>
+                            <p class="dica-formula">Fórmula: =SOMA(B2:B6)</p>
+                            <p class="mt-2"><b>Total de Vendas:</b> <span class="resposta"
+                                    data-resposta="R$ 19.500">?</span></p>
+                        </div>
+                        <div class="card">
+                            <h4>MÉDIA</h4>
+                            <p class="dica-formula">Fórmula: =MÉDIA(B2:B6)</p>
+                            <p class="mt-2"><b>Média de Vendas:</b> <span class="resposta"
+                                    data-resposta="R$ 3.900">?</span>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h4>MÁXIMO</h4>
+                            <p class="dica-formula">Fórmula: =MÁXIMO(B2:B6)</p>
+                            <p class="mt-2"><b>Maior Venda:</b> <span class="resposta" data-resposta="R$ 5.100">?</span>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h4>MÍNIMO</h4>
+                            <p class="dica-formula">Fórmula: =MÍNIMO(B2:B6)</p>
+                            <p class="mt-2"><b>Menor Venda:</b> <span class="resposta" data-resposta="R$ 2.800">?</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="botao botao-revelar">Revelar Respostas</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="missao-se" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Missão 2: Função Lógica SE</h1>
+                    <p>Tome decisões baseadas em condições para automatizar suas planilhas.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>A função <code class="trecho-codigo">SE</code> é uma das mais poderosas e versáteis no Excel. Ela
+                        permite que a planilha tome decisões lógicas baseadas em condições que você define.</p>
+
+                    <div class="caixa-funcao">
+                        <h3>Entendendo a Função SE</h3>
+                        <p><strong>O que faz:</strong> Testa uma condição e retorna um valor se a condição for
+                            VERDADEIRA e outro valor se for FALSA.</p>
+                        <p><strong>Sintaxe:</strong> <code
+                                class="trecho-codigo">=SE(condição; valor_se_verdadeiro; valor_se_falso)</code></p>
+                        <ul>
+                            <li><strong>condição:</strong> Uma expressão que pode ser avaliada como VERDADEIRA ou FALSA
+                            </li>
+                            <li><strong>valor_se_verdadeiro:</strong> O que será exibido se a condição for VERDADEIRA
+                            </li>
+                            <li><strong>valor_se_falso:</strong> O que será exibido se a condição for FALSA</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Operadores de Comparação</h3>
+                        <ul>
+                            <li><code class="trecho-codigo">=</code> igual a</li>
+                            <li><code class="trecho-codigo">></code> maior que</li>
+                            <li><code class="trecho-codigo"><</code> menor que</li>
+                            <li><code class="trecho-codigo">>=</code> maior ou igual a</li>
+                            <li><code class="trecho-codigo"><=</code> menor ou igual a</li>
+                            <li><code class="trecho-codigo"><></code> diferente de</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-exemplo">
+                        <h3>Exemplos Práticos</h3>
+                        <ol>
+                            <li><strong>Verificar se um número é positivo ou negativo:</strong><br>
+                                <code class="trecho-codigo">=SE(A1>0; "Positivo"; "Negativo")</code>
+                            </li>
+                            <li><strong>Classificar vendas por desempenho:</strong><br>
+                                <code
+                                    class="trecho-codigo">=SE(B5>10000; "Excelente"; SE(B5>5000; "Bom"; "Precisa melhorar"))</code>
+                            </li>
+                            <li><strong>Calcular comissão com taxa variável:</strong><br>
+                                <code class="trecho-codigo">=SE(B2>5000; B2*10%; B2*5%)</code>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Funções SE Aninhadas</h3>
+                        <p>É possível colocar uma função SE dentro de outra para testar múltiplas condições:</p>
+                        <p><code
+                                class="trecho-codigo">=SE(condição1; resultado1; SE(condição2; resultado2; resultado3))</code>
+                        </p>
+                        <p>Esta estrutura funciona como uma série de "se isso, então aquilo; senão, se aquilo outro,
+                            então isso outro; senão, algo diferente".</p>
+                    </div>
+
+                    <h2 class="subtitulo-missao">Cenário: Avaliando o Status dos Alunos</h2>
+                    <p>A média para aprovação é 7. Sua missão é usar a função <code class="trecho-codigo">SE</code> para
+                        preencher a coluna "Status".</p>
+                    <div class="container-tabela-excel">
+                        <table class="tabela-excel-estilo">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>A</th>
+                                    <th>B</th>
+                                    <th>C</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Aluno</td>
+                                    <td>Nota</td>
+                                    <td>Status</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mariana</td>
+                                    <td>9</td>
+                                    <td class="celula-resposta"><span class="resposta" data-resposta="Aprovado">?</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>João</td>
+                                    <td>5</td>
+                                    <td class="celula-resposta"><span class="resposta"
+                                            data-resposta="Reprovado">?</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Lucas</td>
+                                    <td>8</td>
+                                    <td class="celula-resposta"><span class="resposta" data-resposta="Aprovado">?</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Beatriz</td>
+                                    <td>6</td>
+                                    <td class="celula-resposta"><span class="resposta"
+                                            data-resposta="Reprovado">?</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="caixa-formula">
+                        <h3>Como aplicar a fórmula?</h3>
+                        <p>Para a aluna na linha 2 (célula B2):</p>
+                        <p><b>Fórmula completa:</b> <code
+                                class="trecho-codigo formula-longa">=SE(B2>=7; "Aprovado"; "Reprovado")</code></p>
+                        <p><b>Passo a passo:</b></p>
+                        <ol>
+                            <li>Começamos com <code class="trecho-codigo">=SE(</code></li>
+                            <li>A condição é <code class="trecho-codigo">B2>=7</code> que verifica se a nota é maior ou
+                                igual a 7</li>
+                            <li>O valor se verdadeiro é <code class="trecho-codigo">"Aprovado"</code></li>
+                            <li>O valor se falso é <code class="trecho-codigo">"Reprovado"</code></li>
+                            <li>Fechamos a função com <code class="trecho-codigo">)</code></li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-desafio">
+                        <h3>Desafio Avançado</h3>
+                        <p>Modifique a fórmula para classificar os alunos em três categorias:</p>
+                        <ul>
+                            <li>"Excelente" se a nota for 9 ou maior</li>
+                            <li>"Aprovado" se a nota for entre 7 e 8.9</li>
+                            <li>"Reprovado" se a nota for menor que 7</li>
+                        </ul>
+                        <p><b>Dica:</b> Use funções SE aninhadas</p>
+                        <div class="container-solucao">
+                            <button class="botao botao-solucao">Solução (Clique para exibir)</button>
+                            <div class="solucao-oculta">
+                                <p><code
+                                        class="trecho-codigo formula-longa">=SE(B2>=9;"Excelente";SE(B2>=7;"Aprovado";"Reprovado"))</code>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="botao botao-revelar">Revelar Respostas</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="missao-procv" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Missão 3: Função de Busca PROCV</h1>
+                    <p>Encontre informações em uma tabela a partir de um valor em outra.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>O <code class="trecho-codigo">PROCV</code> (Procura Vertical) é uma das funções mais poderosas do
+                        Excel para consultar dados. Ela busca um valor na primeira coluna de uma tabela e retorna um
+                        valor correspondente em outra coluna da mesma linha.</p>
+
+                    <div class="caixa-funcao">
+                        <h3>Entendendo o PROCV</h3>
+                        <p><strong>Sintaxe completa:</strong> <code
+                                class="trecho-codigo formula-longa">=PROCV(valor_procurado; matriz_tabela; núm_índice_coluna; [procurar_intervalo])</code>
+                        </p>
+
+                        <ul>
+                            <li><strong>valor_procurado:</strong> O valor que você quer encontrar na primeira coluna da
+                                tabela (ex: código, ID, nome)</li>
+                            <li><strong>matriz_tabela:</strong> O intervalo de células que contém os dados da tabela
+                                (importante: o valor procurado deve estar na primeira coluna deste intervalo)</li>
+                            <li><strong>núm_índice_coluna:</strong> O número da coluna na matriz_tabela da qual você
+                                quer extrair o valor (a primeira coluna é 1, a segunda é 2, etc.)</li>
+                            <li><strong>procurar_intervalo:</strong> Um valor lógico:
+                                <ul>
+                                    <li><code class="trecho-codigo">VERDADEIRO</code> ou omitido: correspondência
+                                        aproximada (maior valor que não excede o valor_procurado)</li>
+                                    <li><code class="trecho-codigo">FALSO</code>: correspondência exata</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Dicas importantes sobre o PROCV</h3>
+                        <ul>
+                            <li>O valor procurado <strong>SEMPRE</strong> deve estar na primeira coluna da matriz de
+                                tabela</li>
+                            <li>Para pesquisas de texto, recomenda-se usar <code class="trecho-codigo">FALSO</code> no
+                                argumento procurar_intervalo</li>
+                            <li>Quando usar <code class="trecho-codigo">VERDADEIRO</code>, os dados na primeira coluna
+                                da
+                                tabela devem estar em ordem crescente</li>
+                            <li>O PROCV é sensível a maiúsculas/minúsculas em correspondências exatas</li>
+                            <li>Se o PROCV não encontrar o valor, retornará o erro <code
+                                    class="trecho-codigo">#N/D</code> (não disponível)</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-exemplo">
+                        <h3>Casos de uso comuns do PROCV</h3>
+                        <ul>
+                            <li><strong>Sistemas de inventário:</strong> Buscar preços, descrições ou estoque a partir
+                                de um código de produto</li>
+                            <li><strong>Recursos Humanos:</strong> Obter informações de funcionários a partir de seu
+                                número de matrícula</li>
+                            <li><strong>Finanças:</strong> Consultar taxas de imposto com base em faixas de valores</li>
+                            <li><strong>Educação:</strong> Converter notas numéricas em conceitos (A, B, C, etc.)</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="subtitulo-missao">Cenário: Preenchendo um Relatório de Vendas</h2>
+                    <p>Temos um relatório de vendas apenas com o ID do produto. Use o <code
+                            class="trecho-codigo">PROCV</code> para buscar o Nome e o Preço na Tabela de Cadastro.</p>
+                    <div class="grid-2-col">
+                        <div>
+                            <h3 class="titulo-tabela">Tabela de Cadastro de Produtos</h3>
+                            <div class="container-tabela-excel">
+                                <table class="tabela-excel-estilo">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>A</th>
+                                            <th>B</th>
+                                            <th>C</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>ID Produto</td>
+                                            <td>Nome do Produto</td>
+                                            <td>Preço</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>PROD-001</td>
+                                            <td>Mouse sem Fio</td>
+                                            <td>R$ 80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>PROD-002</td>
+                                            <td>Teclado ABNT2</td>
+                                            <td>R$ 150</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>PROD-003</td>
+                                            <td>Monitor 24"</td>
+                                            <td>R$ 950</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>PROD-004</td>
+                                            <td>Webcam HD</td>
+                                            <td>R$ 220</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="titulo-tabela">Relatório de Vendas (Sua Missão)</h3>
+                            <div class="container-tabela-excel">
+                                <table class="tabela-excel-estilo">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>A</th>
+                                            <th>B</th>
+                                            <th>C</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>ID Produto</td>
+                                            <td>Nome do Produto</td>
+                                            <td>Preço</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>PROD-003</td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="Monitor 24&quot;">?</span></td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="R$ 950">?</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>PROD-001</td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="Mouse sem Fio">?</span></td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="R$ 80">?</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>PROD-004</td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="Webcam HD">?</span></td>
+                                            <td class="celula-resposta"><span class="resposta"
+                                                    data-resposta="R$ 220">?</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-formula">
+                        <h3>Como aplicar as fórmulas?</h3>
+                        <p>Para o item na célula <b>A10</b> (ID "PROD-003"):</p>
+                        <ul>
+                            <li><b>Para buscar o Nome (2ª coluna):</b> <code
+                                    class="trecho-codigo formula-longa">=PROCV(A10; A2:C5; 2; FALSO)</code></li>
+                            <li><b>Para buscar o Preço (3ª coluna):</b> <code
+                                    class="trecho-codigo formula-longa">=PROCV(A10; A2:C5; 3; FALSO)</code></li>
+                        </ul>
+                        <p><b>Explicação passo a passo:</b></p>
+                        <ol>
+                            <li>A10 é nosso valor procurado (o ID do produto que queremos buscar)</li>
+                            <li>A2:C5 é nossa matriz de dados (a tabela de cadastro de produtos)</li>
+                            <li>2 ou 3 é o número da coluna que queremos retornar (2 para Nome, 3 para Preço)</li>
+                            <li>FALSO indica que queremos uma correspondência exata</li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-desafio">
+                        <h3>Tratando Erros no PROCV</h3>
+                        <p>Se o código do produto não existir na tabela de cadastro, o PROCV retornará <code
+                                class="trecho-codigo">#N/D</code>. Para evitar isso, podemos usar:</p>
+                        <p><code
+                                class="trecho-codigo formula-longa">=SE(ÉERROS(PROCV(A10;A2:C5;2;FALSO));"Produto não cadastrado";PROCV(A10;A2:C5;2;FALSO))</code>
+                        </p>
+                        <p>Esta fórmula mostrará "Produto não cadastrado" em vez do erro #N/D.</p>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Alternativas ao PROCV</h3>
+                        <ul>
+                            <li><strong>PROCH:</strong> Funciona como PROCV, mas busca horizontalmente (nas linhas) em
+                                vez de verticalmente (nas colunas)</li>
+                            <li><strong>CORRESP + ÍNDICE:</strong> Combinação mais flexível para buscar dados em
+                                qualquer direção</li>
+                            <li><strong>PROCX:</strong> Disponível nas versões mais recentes do Excel, combina as
+                                funcionalidades de PROCV, PROCH, CORRESP e ÍNDICE</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="botao botao-revelar">Revelar Respostas</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="filtros" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Filtros e Ordenação</h1>
+                    <p>Organize grandes volumes de dados para encontrar o que você precisa.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>Ao trabalhar com grandes conjuntos de dados, a capacidade de filtrar e ordenar informações
+                        torna-se essencial para uma análise eficiente.</p>
+
+                    <div class="caixa-funcao">
+                        <h3>Filtros no Excel</h3>
+                        <p><strong>O que são:</strong> Filtros permitem exibir apenas os dados que atendem a critérios
+                            específicos, ocultando temporariamente o restante.</p>
+                        <p><strong>Como aplicar:</strong></p>
+                        <ol>
+                            <li>Selecione a tabela inteira (incluindo os cabeçalhos)</li>
+                            <li>Na guia "Dados", clique em "Filtro" (ou use o atalho Ctrl+Shift+L)</li>
+                            <li>Setas suspensas aparecerão em cada cabeçalho da coluna</li>
+                            <li>Clique na seta da coluna que deseja filtrar</li>
+                            <li>Selecione os valores que deseja exibir ou use as opções de filtro personalizadas</li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Tipos de Filtros</h3>
+                        <ul>
+                            <li><strong>Filtros de texto:</strong> Contém, Começa com, Termina com, etc.</li>
+                            <li><strong>Filtros numéricos:</strong> Maior que, Menor que, Entre, Top 10, etc.</li>
+                            <li><strong>Filtros de data:</strong> Hoje, Esta semana, Mês passado, etc.</li>
+                            <li><strong>Filtros de cor:</strong> Filtra com base na cor da célula (útil após formatação
+                                condicional)</li>
+                            <li><strong>Filtros avançados:</strong> Para critérios mais complexos com múltiplas
+                                condições</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-exemplo">
+                        <h3>Exemplo Prático de Filtro</h3>
+                        <p>Imagine uma lista de vendas com as colunas: Produto, Vendedor, Região, Valor e Data.</p>
+                        <p>Para visualizar apenas as vendas:</p>
+                        <ul>
+                            <li>Da região "Sul"</li>
+                            <li>Com valores acima de R$ 1.000</li>
+                            <li>Realizadas no último trimestre</li>
+                        </ul>
+                        <p>Você aplicaria filtros em cada uma dessas colunas, reduzindo significativamente o volume de
+                            dados a analisar.</p>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h3>Ordenação (Classificação) de Dados</h3>
+                        <p><strong>O que é:</strong> Reorganiza seus dados em ordem crescente ou decrescente com base em
+                            uma ou mais colunas.</p>
+                        <p><strong>Como aplicar:</strong></p>
+                        <ol>
+                            <li>Selecione qualquer célula dentro da tabela</li>
+                            <li>Na guia "Dados", clique em "Classificar"</li>
+                            <li>Escolha a coluna, o tipo de classificação (valores, cores, ícones) e a ordem (A a Z, Z a
+                                A, etc.)</li>
+                            <li>Para classificação em múltiplos níveis, clique em "Adicionar Nível"</li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Dicas Avançadas</h3>
+                        <ul>
+                            <li><strong>Classificação personalizada:</strong> Crie ordens personalizadas (como dias da
+                                semana, meses, etc.)</li>
+                            <li><strong>Filtro com Formatação Condicional:</strong> Combine essas ferramentas para
+                                destacar visualmente dados específicos</li>
+                            <li><strong>Segmentação de Dados:</strong> Uma alternativa moderna aos filtros tradicionais,
+                                com controles visuais para filtrar dados em tabelas e gráficos dinâmicos</li>
+                            <li><strong>Filtros em várias colunas:</strong> Aplique filtros em múltiplas colunas
+                                simultaneamente para refinar ainda mais os resultados</li>
+                        </ul>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h3>Exercício Prático</h3>
+                        <p><strong>Cenário:</strong> Lista de Alunos</p>
+                        <ol>
+                            <li>Crie uma tabela com as seguintes colunas: Nome, Nota, Cidade e Curso</li>
+                            <li>Preencha com pelo menos 10 registros variados</li>
+                            <li>Aplique um filtro para mostrar apenas os alunos:
+                                <ul>
+                                    <li>Com nota acima de 7</li>
+                                    <li>De uma cidade específica</li>
+                                </ul>
+                            </li>
+                            <li>Ordene os resultados por nota (do maior para o menor)</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="graficos" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Criação de Gráficos</h1>
+                    <p>Transforme números em uma representação visual poderosa.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>Os gráficos são ferramentas poderosas para comunicar informações complexas de forma visual,
+                        permitindo identificar tendências, padrões e outliers que poderiam passar despercebidos em
+                        tabelas de dados.</p>
+
+                    <div class="caixa-funcao">
+                        <h3>Criando Gráficos no Excel</h3>
+                        <p><strong>Processo básico:</strong></p>
+                        <ol>
+                            <li>Selecione os dados que deseja representar (incluindo cabeçalhos para rótulos)</li>
+                            <li>Na guia "Inserir", escolha o tipo de gráfico apropriado</li>
+                            <li>Use as ferramentas de "Design do Gráfico" e "Formatar" para personalizar a aparência
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Escolhendo o Tipo de Gráfico Correto</h3>
+                        <ul>
+                            <li><strong>Gráfico de Colunas/Barras:</strong>
+                                <ul>
+                                    <li>Ideal para: Comparar valores entre diferentes categorias</li>
+                                    <li>Exemplo: Vendas mensais, comparação de desempenho entre departamentos</li>
+                                    <li>Dica: Use barras horizontais quando tiver muitas categorias ou nomes longos</li>
+                                </ul>
+                            </li>
+                            <li><strong>Gráfico de Linhas:</strong>
+                                <ul>
+                                    <li>Ideal para: Mostrar tendências ao longo do tempo</li>
+                                    <li>Exemplo: Evolução de vendas ao longo de meses, variação de temperatura</li>
+                                    <li>Dica: Ótimo para dados contínuos e análise de tendências</li>
+                                </ul>
+                            </li>
+                            <li><strong>Gráfico de Pizza:</strong>
+                                <ul>
+                                    <li>Ideal para: Mostrar a proporção de partes em relação ao todo</li>
+                                    <li>Exemplo: Distribuição de gastos, market share</li>
+                                    <li>Dica: Limite a 5-7 fatias para melhor legibilidade</li>
+                                </ul>
+                            </li>
+                            <li><strong>Gráfico de Dispersão (Scatter):</strong>
+                                <ul>
+                                    <li>Ideal para: Mostrar a relação entre duas variáveis</li>
+                                    <li>Exemplo: Correlação entre preço e vendas, idade e altura</li>
+                                    <li>Dica: Adicione linhas de tendência para visualizar correlações</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-exemplo">
+                        <h3>Elementos de um Gráfico</h3>
+                        <ul>
+                            <li><strong>Título:</strong> Descrição clara do que o gráfico representa</li>
+                            <li><strong>Eixos:</strong> Escalas horizontal (X) e vertical (Y) com rótulos</li>
+                            <li><strong>Legendas:</strong> Identificação das séries de dados</li>
+                            <li><strong>Rótulos de dados:</strong> Valores específicos exibidos diretamente no gráfico
+                            </li>
+                            <li><strong>Linhas de grade:</strong> Referências visuais para facilitar a leitura</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h3>Personalizando Gráficos</h3>
+                        <p>Após criar um gráfico, você pode melhorá-lo com várias personalizações:</p>
+                        <ul>
+                            <li><strong>Estilos e cores:</strong> Use a guia "Design" para aplicar estilos predefinidos
+                                ou personalizar cores</li>
+                            <li><strong>Adicionar elementos:</strong> Inclua títulos de eixos, legendas, linhas de
+                                grade, etc.</li>
+                            <li><strong>Formatação específica:</strong> Clique com o botão direito em qualquer elemento
+                                do gráfico para formatar individualmente</li>
+                            <li><strong>Dados selecionados:</strong> Use "Selecionar Dados" para ajustar quais séries e
+                                categorias são exibidas</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Gráficos Avançados</h3>
+                        <ul>
+                            <li><strong>Gráficos combinados:</strong> Mescle diferentes tipos de gráficos (ex: colunas e
+                                linhas) para representar diferentes métricas</li>
+                            <li><strong>Gráficos dinâmicos:</strong> Associados a tabelas dinâmicas, permitem análises
+                                interativas e multidimensionais</li>
+                            <li><strong>Minigráficos (Sparklines):</strong> Pequenos gráficos dentro de células que
+                                mostram tendências em espaço compacto</li>
+                            <li><strong>Mapas:</strong> Visualize dados geográficos com gráficos de mapa</li>
+                        </ul>
+                    </div>
+
+                    <div class="caixa-desafio">
+                        <h3>Dicas para Gráficos Eficazes</h3>
+                        <ul>
+                            <li><strong>Simplicidade:</strong> Mantenha os gráficos limpos e focados na mensagem
+                                principal</li>
+                            <li><strong>Escala apropriada:</strong> Use escalas que representem os dados com precisão e
+                                sem distorção</li>
+                            <li><strong>Cores significativas:</strong> Escolha cores que façam sentido e ajudem na
+                                interpretação</li>
+                            <li><strong>Título informativo:</strong> O título deve explicar claramente o que o gráfico
+                                mostra</li>
+                            <li><strong>Consistência:</strong> Mantenha o mesmo estilo em gráficos relacionados</li>
+                        </ul>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h3>Exercício Prático</h3>
+                        <p><strong>Cenário: Análise de Vendas Trimestrais</strong></p>
+                        <ol>
+                            <li>Crie uma tabela com as colunas "Mês" (Janeiro a Dezembro) e "Vendas" com valores
+                                arbitrários</li>
+                            <li>Crie um gráfico de colunas para visualizar as vendas mensais</li>
+                            <li>Adicione uma linha de média para destacar o desempenho mensal em relação à média anual
+                            </li>
+                            <li>Personalize o gráfico com um título informativo, rótulos nos eixos e uma escala
+                                apropriada</li>
+                            <li>Experimente outros tipos de gráficos para ver qual representa melhor os dados</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+            <section id="atalhos" class="secao-conteudo">
+                <header class="cabecalho-secao">
+                    <h1>Atalhos Essenciais</h1>
+                    <p>Agilize seu trabalho com estes atalhos de teclado.</p>
+                </header>
+                <div class="corpo-secao">
+                    <p>Dominar os atalhos de teclado do Excel pode aumentar drasticamente sua produtividade,
+                        economizando tempo e reduzindo a dependência do mouse.</p>
+
+                    <div class="caixa-info">
+                        <h3>Por que usar atalhos?</h3>
+                        <ul>
+                            <li><strong>Velocidade:</strong> Execute comandos comuns em uma fração do tempo</li>
+                            <li><strong>Eficiência:</strong> Mantenha as mãos no teclado e reduza movimentos
+                                desnecessários</li>
+                            <li><strong>Produtividade:</strong> Complete tarefas repetitivas muito mais rapidamente</li>
+                            <li><strong>Menos fadiga:</strong> Reduza o esforço e a tensão física ao alternar entre
+                                mouse e teclado</li>
+                        </ul>
+                    </div>
+
+                    <h3>Atalhos por categoria</h3>
+
+                    <div class="caixa-funcao">
+                        <h4>Navegação</h4>
+                        <div class="tabela-atalhos-grid">
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Home</div>
+                                <div class="descricao-atalho">Ir para a célula A1</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + End</div>
+                                <div class="descricao-atalho">Ir para a última célula usada na planilha</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Setas</div>
+                                <div class="descricao-atalho">Mover para a borda da região de dados atual</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Page Down/Up</div>
+                                <div class="descricao-atalho">Mover para a próxima/anterior planilha</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Alt + Page Down/Up</div>
+                                <div class="descricao-atalho">Mover uma tela para a direita/esquerda</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">F5</div>
+                                <div class="descricao-atalho">Abrir caixa de diálogo Ir para</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h4>Seleção</h4>
+                        <div class="tabela-atalhos-grid">
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Espaço</div>
+                                <div class="descricao-atalho">Selecionar coluna inteira</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Shift + Espaço</div>
+                                <div class="descricao-atalho">Selecionar linha inteira</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + A</div>
+                                <div class="descricao-atalho">Selecionar todos os dados/planilha</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Shift + Setas</div>
+                                <div class="descricao-atalho">Estender seleção</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Shift + Setas</div>
+                                <div class="descricao-atalho">Estender seleção até a borda dos dados</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h4>Edição Básica</h4>
+                        <div class="tabela-atalhos-grid">
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + S</div>
+                                <div class="descricao-atalho">Salvar a pasta de trabalho</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + C</div>
+                                <div class="descricao-atalho">Copiar seleção</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + V</div>
+                                <div class="descricao-atalho">Colar conteúdo</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + X</div>
+                                <div class="descricao-atalho">Recortar seleção</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Z</div>
+                                <div class="descricao-atalho">Desfazer a última ação</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">F2</div>
+                                <div class="descricao-atalho">Editar a célula ativa</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Delete</div>
+                                <div class="descricao-atalho">Limpar conteúdo das células selecionadas</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Alt + Enter</div>
+                                <div class="descricao-atalho">Iniciar nova linha na mesma célula</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h4>Formatação</h4>
+                        <div class="tabela-atalhos-grid">
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + N</div>
+                                <div class="descricao-atalho">Aplicar negrito</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + I</div>
+                                <div class="descricao-atalho">Aplicar itálico</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + S</div>
+                                <div class="descricao-atalho">Aplicar sublinhado</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + 1</div>
+                                <div class="descricao-atalho">Abrir caixa de diálogo Formatar Células</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Shift + $</div>
+                                <div class="descricao-atalho">Aplicar formato de moeda</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Shift + %</div>
+                                <div class="descricao-atalho">Aplicar formato de porcentagem</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Shift + #</div>
+                                <div class="descricao-atalho">Aplicar formato de data</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-funcao">
+                        <h4>Dados e Fórmulas</h4>
+                        <div class="tabela-atalhos-grid">
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Alt + =</div>
+                                <div class="descricao-atalho">Inserir fórmula AutoSoma</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + Shift + L</div>
+                                <div class="descricao-atalho">Ativar/desativar filtros</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">F9</div>
+                                <div class="descricao-atalho">Recalcular todas as fórmulas</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + D</div>
+                                <div class="descricao-atalho">Preencher para baixo</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + R</div>
+                                <div class="descricao-atalho">Preencher para a direita</div>
+                            </div>
+                            <div class="item-atalho">
+                                <div class="tecla-atalho">Ctrl + '</div>
+                                <div class="descricao-atalho">Copiar fórmula da célula acima</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="caixa-desafio">
+                        <h3>Desafio de Produtividade</h3>
+                        <p>Tente executar as seguintes tarefas usando apenas o teclado:</p>
+                        <ol>
+                            <li>Crie uma tabela com cabeçalhos (Produto, Quantidade, Preço)</li>
+                            <li>Formate os cabeçalhos em negrito</li>
+                            <li>Insira alguns dados</li>
+                            <li>Na última coluna, crie uma fórmula para calcular o Total (Quantidade * Preço)</li>
+                            <li>Copie a fórmula para todas as linhas com dados</li>
+                            <li>Formate a coluna de preço e total como moeda</li>
+                            <li>Aplique filtros à tabela</li>
+                            <li>Salve o arquivo</li>
+                        </ol>
+                    </div>
+
+                    <div class="caixa-info">
+                        <h3>Dica para aprendizado</h3>
+                        <p>Para dominar os atalhos, não tente aprender todos de uma vez. Comece com 3-5 atalhos e use-os
+                            consistentemente por uma semana. Depois, adicione mais alguns. Em pouco tempo, a maioria
+                            deles se tornará automática.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

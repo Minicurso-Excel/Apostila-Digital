@@ -1,0 +1,726 @@
+:root {
+    --cor-primaria: #107c41;
+    --cor-secundaria: #212529;
+    --cor-fundo: #f0f2f5;
+    --cor-barra-lateral: #ffffff;
+    --cor-conteudo: #ffffff;
+    --cor-texto: #343a40;
+    --cor-texto-claro: #6c757d;
+    --cor-borda: #dee2e6;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --fonte-familia: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-familia);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.7;
+    font-size: 17px;
+
+}
+
+#app-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+#barra-lateral {
+    width: 260px;
+    background-color: var(--cor-barra-lateral);
+    border-right: 1px solid var(--cor-borda);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+}
+
+.cabecalho-barra-lateral {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.navegacao-barra-lateral {
+    padding: 1rem 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.titulo-nav {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--cor-texto-claro);
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.link-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 400;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.link-nav .icone {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.link-nav:hover {
+    background-color: #f8f9fa;
+    color: var(--cor-primaria);
+}
+
+.link-nav.ativo {
+    background-color: #e9f2ec;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    border-left-color: var(--cor-primaria);
+}
+
+.botao-menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#conteudo-principal {
+    flex-grow: 1;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.secao-conteudo {
+    display: none;
+    animation: aparecerGradual 0.5s ease-in-out;
+}
+
+.secao-conteudo.ativo {
+    display: block;
+}
+
+@keyframes aparecerGradual {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cabecalho-secao {
+    margin-bottom: 2rem;
+}
+
+.cabecalho-secao h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    margin-bottom: 0.8rem;
+}
+
+.cabecalho-secao p {
+    font-size: 1.2rem;
+    color: var(--cor-texto-claro);
+    line-height: 1.8;
+}
+
+.corpo-secao {
+    max-width: 800px;
+}
+
+.grade-cartao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cartao {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    border: 1px solid var(--cor-borda);
+}
+
+.cartao h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.margem-topo-4 {
+    margin-top: 2rem;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.botao {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao.botao-revelar {
+    background-color: var(--cor-secundaria);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.botao.botao-revelar:hover {
+    background-color: #c07400;
+}
+
+.botao:hover {
+    background-color: #0d6534;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trecho-codigo {
+    background-color: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.caixa-exercicio,
+.caixa-exemplo,
+.caixa-formula,
+.caixa-funcao,
+.caixa-info,
+.caixa-desafio {
+    background-color: #f8f9fa;
+    border: 1px solid var(--cor-borda);
+    border-left: 4px solid var(--cor-primaria);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.caixa-exercicio h3,
+.caixa-exemplo h3,
+.caixa-formula h3,
+.caixa-funcao h3,
+.caixa-info h3,
+.caixa-desafio h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.subtitulo-missao {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container-tabela-excel {
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    box-shadow: var(--sombra);
+    max-width: 100%;
+}
+
+.tabela-excel {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    table-layout: fixed;
+
+}
+
+.tabela-excel th,
+.tabela-excel td {
+    border: 1px solid #e9ecef;
+    padding: 0.75rem;
+    text-align: left;
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+.tabela-excel thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tabela-excel tbody tr td:first-child {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cartoes-missao .cartao {
+    text-align: center;
+}
+
+.dica-formula {
+    font-size: 0.8rem;
+    color: var(--cor-texto-claro);
+    font-family: monospace;
+}
+
+.resposta {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.resposta.revelada {
+    background-color: #28a745;
+}
+
+.celula-resposta {
+    font-weight: 600;
+    text-align: center;
+}
+
+.caixa-funcao,
+.caixa-info,
+.caixa-desafio,
+.caixa-exemplo,
+.caixa-exercicio {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--cor-primaria);
+}
+
+.caixa-funcao {
+    border-left-color: var(--cor-primaria);
+}
+
+.caixa-info {
+    border-left-color: #17a2b8;
+    background-color: #e3f4f6;
+}
+
+.caixa-desafio {
+    border-left-color: #ffc107;
+    background-color: #fff9e6;
+}
+
+.caixa-funcao h3,
+.caixa-info h3,
+.caixa-desafio h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.caixa-info h3 {
+    color: #17a2b8;
+}
+
+.caixa-desafio h3 {
+    color: #d39e00;
+}
+
+.container-tabela-excel {
+    margin-bottom: 2rem;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.tabela-excel-estilo {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    table-layout: fixed;
+
+}
+
+.tabela-excel-estilo th,
+.tabela-excel-estilo td {
+    border: 1px solid var(--cor-borda);
+    padding: 0.75rem;
+    text-align: center;
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+}
+
+.tabela-excel-estilo th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.tabela-excel-estilo tbody tr:first-child {
+    background-color: #e6f3ea;
+    font-weight: 600;
+}
+
+.grade-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.titulo-tabela {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.tabela-atalhos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.item-atalho {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.tecla-atalho {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-right: 1rem;
+    font-family: monospace;
+}
+
+
+.formula-longa {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.4rem;
+    margin: 0.5rem 0;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 992px) {
+    .botao-menu {
+        display: block;
+    }
+
+    #barra-lateral {
+        position: fixed;
+        left: -280px;
+        width: 260px;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+    }
+
+    #app-wrapper.barra-lateral-aberta #barra-lateral {
+        left: 0;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    #conteudo-principal {
+        padding: 1.5rem;
+        padding-top: 3.5rem;
+    }
+
+    .grade-2-col {
+        grid-template-columns: 1fr;
+    }
+
+    #app-wrapper.barra-lateral-aberta .botao-menu {
+        left: 270px;
+    }
+
+
+    .trecho-codigo {
+        font-size: 0.85em;
+        display: inline-block;
+        margin: 0.2rem 0;
+    }
+
+    .container-tabela-excel {
+        margin-left: -1rem;
+        margin-right: -1rem;
+        width: calc(100% + 2rem);
+        border-radius: 0;
+    }
+
+
+    .tabela-excel,
+    .tabela-excel-estilo {
+        font-size: 0.8rem;
+    }
+
+    .tabela-excel th,
+    .tabela-excel td,
+    .tabela-excel-estilo th,
+    .tabela-excel-estilo td {
+        padding: 0.4rem;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .caixa-formula,
+    .caixa-funcao,
+    .caixa-info,
+    .caixa-desafio,
+    .caixa-exemplo,
+    .caixa-exercicio {
+        padding: 1.2rem;
+        font-size: 16px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    p,
+    li,
+    td,
+    th {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .tabela-excel,
+    .tabela-excel-estilo {
+        font-size: 0.75rem;
+    }
+
+    .tabela-excel th,
+    .tabela-excel td,
+    .tabela-excel-estilo th,
+    .tabela-excel-estilo td {
+        padding: 0.3rem;
+    }
+
+    .corpo-secao {
+        padding: 0;
+    }
+}
+
+
+.tabela-atalhos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.item-atalho {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--cor-borda);
+    transition: all 0.2s ease;
+}
+
+.item-atalho:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-primaria);
+}
+
+.tecla-atalho {
+    font-family: monospace;
+    font-size: 1rem;
+    background-color: #e9ecef;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+.descricao-atalho {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+.caixa-formula {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 4px solid #0066cc;
+}
+
+.caixa-formula h3 {
+    color: #0066cc;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.caixa-formula code {
+    display: inline-block;
+    margin: 0.3rem 0;
+}
+
+.dica-formula {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #666;
+    font-size: 0.9rem;
+    overflow-x: auto;
+}
+
+.subtitulo-missao {
+    color: var(--cor-primaria);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--cor-borda);
+    padding-bottom: 0.5rem;
+}
+
+.cartoes-missao {
+    margin-top: 1.5rem;
+}
+
+.titulo-tabela {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.trecho-codigo {
+    font-family: monospace;
+    background-color: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+    color: #d63384;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+
+.container-solucao {
+    margin-top: 1rem;
+}
+
+.botao-solucao {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.botao-solucao:hover {
+    background-color: #343a40;
+}
+
+.solucao-oculta {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--cor-primaria);
+    border-radius: 0 4px 4px 0;
+}
+
+.solucao-oculta.ativa {
+    display: block;
+    animation: aparecer 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p,
+li,
+td,
+th {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}

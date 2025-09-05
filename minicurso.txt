@@ -1,0 +1,87 @@
+Tema do minicurso:
+Excel Básico: Dominando o Essencial para o Dia a Dia
+Tema do minicurso: 
+Excel Básico: Dominando o Essencial para o Dia a Dia
+
+IMPORTANTE
+
+ESTE É UM DOCUMENTO COMPROBATÓRIO DA EXECUÇÃO DO MINICURSO.
+Este documento configura-se como um artefato acadêmico e organizacional vinculado ao mini curso, uma vez que reúne de maneira sistemática todas as informações indispensáveis à sua concepção, planejamento e execução. Assim, cada tópico previamente estabelecido deve ser desenvolvido de forma descritiva, clara e consistente, assegurando padronização na apresentação dos conteúdos e responsabilidade na elaboração das informações. Tal estruturação não apenas orienta a execução do minicurso, mas também consolida sua validade enquanto instrumento de registro, avaliação e referência para futuras iniciativas de natureza semelhante.
+
+TEMA
+
+Excel Básico: Dominando o Essencial para o Dia a Dia
+
+O presente minicurso tem como objetivo introduzir os participantes ao uso prático do Microsoft Excel, abordando desde os fundamentos da ferramenta até a aplicação de funções intermediárias.
+A escolha do tema se justifica pela ampla utilização do Excel em ambientes acadêmicos, administrativos e corporativos, sendo uma competência valorizada no mercado de trabalho.
+A proposta visa atender à demanda por capacitação digital, promovendo inclusão tecnológica e autonomia na organização e análise de dados.
+
+OBJETIVOS DO MINICURSO
+
+Objetivo Geral: Capacitar os participantes a utilizar o Excel de forma eficiente para tarefas cotidianas, com introdução a recursos intermediários que ampliam a produtividade e a capacidade analítica.
+
+Objetivos Específicos:
+
+    • Apresentar a interface e os principais elementos do Excel
+    • Demonstrar a criação e formatação de planilhas simples
+    • Ensinar o uso de fórmulas básicas como SOMA, MÉDIA, MÍNIMO e MÁXIMO
+    • Aplicar filtros e ordenações para organização de dados
+    • Introduzir funções intermediárias como SE e PROCV
+    • Criar gráficos simples para visualização de informações
+
+TECNOLOGIAS UTILIZADAS
+
+O minicurso será desenvolvido com base na utilização do software Microsoft Excel. A escolha se fundamenta na relevância prática da ferramenta e na sua presença consolidada em ambientes acadêmicos e profissionais.
+Serão utilizados também recursos audiovisuais, como projetor e slides explicativos, para facilitar o acompanhamento dos conteúdos.
+
+PÚBLICO-ALVO
+
+O minicurso é destinado a pessoas com pouca ou nenhuma experiência prévia em Excel, incluindo estudantes do ensino médio e superior, profissionais em transição de carreira e membros da comunidade em geral que desejam adquirir competências digitais básicas.
+A linguagem acessível e os exemplos práticos favorecem a participação ampla e inclusiva.
+
+ESCALA DE FUNÇÕES ENTRE OS MEMBROS
+
+Instrutor principal: Responsável pela condução das aulas, explicação dos conteúdos e orientação dos exercícios práticos.
+Responsável pelo material de apoio: Elaboração da apostila, slides e planilhas modelo utilizadas durante o minicurso.
+Apoio técnico: Suporte aos participantes durante a execução das atividades.
+
+TRAJETO DE APRENDIZADO
+
+O minicurso será estruturado em uma sequência lógica e progressiva, distribuída ao longo de 1 hora:
+
+Tempo	Conteúdo	Atividade
+10 min	Introdução ao Excel	Navegação pela interface, criação de planilha
+15 min	Fórmulas básicas	Aplicação de SOMA, MÉDIA, MÍNIMO, MÁXIMO
+10 min	Formatação	Estilização de células, bordas, alinhamento
+10 min	Filtros e ordenação	Organização de dados com filtros automáticos
+10 min	Funções intermediárias	Uso de SE e PROCV com exemplos práticos
+5 min	Gráficos	Criação de gráfico de colunas e pizza
+
+
+PRÉ-REQUISITOS PARA O MINICURSO
+
+Não são exigidos conhecimentos prévios em Excel.
+Recomenda-se apenas familiaridade básica com o uso de computador e navegação em ambientes digitais, de modo a garantir o aproveitamento das atividades propostas.
+
+INFRAESTRUTURA EXIGIDA
+
+Computadores com Microsoft Excel instalado;
+Sala equipada com projetor para demonstração;
+Acesso à internet;
+Recursos de áudio e vídeo para apresentação dos conteúdos.
+
+MATERIAL DE APOIO
+
+Os participantes receberão uma apostila digital contendo o passo a passo dos exercícios, planilhas modelo para prática e slides com resumo dos tópicos abordados.
+Esses materiais visam facilitar o acompanhamento das atividades.
+
+CONSIDERAÇÕES
+
+A proposta do minicurso se alinha às diretrizes da curricularização ao promover a disseminação de conhecimentos práticos e relevantes para a comunidade.
+Ao abordar o Excel de forma acessível e aplicada, contribui-se para o desenvolvimento acadêmico, profissional e social dos participantes.
+A iniciativa reforça o compromisso institucional com a formação integral e a extensão universitária.
+
+OBSERVAÇÕES COMPLEMENTARES
+
+O minicurso será realizado em formato presencial. Os membros envolvidos estarão disponíveis para suporte técnico durante a execução da atividade. 
+Os materiais de apoio serão disponibilizados em formato digital para facilitar o acesso e a reutilização.
